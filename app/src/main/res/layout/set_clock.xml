@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+<!--标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:textSize="20dp"
+            android:textColor="#0082fb"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置闹钟"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="保存"
+            android:textSize="20dp"
+            android:textColor="#0082fb"
+            android:gravity="center"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <TimePicker
+        android:id="@+id/TimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/set_up"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="重复"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/repeat_time"
+            android:text="一天"
+            android:gravity="right|center_horizontal"
+            android:paddingTop="13dp"
+            android:paddingRight="25dp"
+            android:textSize="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

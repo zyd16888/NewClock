@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:layout_height="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Stopwatch_show"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="00:00.00"
+            android:textSize="30dp"
+            android:gravity="center"/>
+
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerViewStopWatch"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.5"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+
+        <ImageView
+            android:id="@+id/iV_sW_Start"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/start_stop" />
+
+        <ImageView
+            android:id="@+id/iv_refresh_sw"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@+id/iV_sW_Start"
+            android:src="@mipmap/iv_refresh" />
+
+        <ImageView
+            android:id="@+id/iv_sw_Record"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/iv_refresh_sw"
+            android:layout_marginEnd="40dp"
+            android:layout_toStartOf="@+id/iV_sW_Start"
+            android:src="@mipmap/iv_record" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

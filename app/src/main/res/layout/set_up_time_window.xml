@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_selecttimeway"
+    android:background="#f5f2f2"
+    android:orientation="vertical">
+
+    <!--lineSpacingExtra为额外边距-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:lineSpacingExtra="5dp"
+        android:id="@+id/repeat_times"
+        android:text="重复次数"
+        android:textColor="#000"
+        android:background="#7de7ae"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:lineSpacingExtra="5dp"
+        android:text="一次"
+        android:textColor="#020300"
+        android:background="#cdf5da"
+        android:id="@+id/once"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/everyday"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#cdf5da"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="每天"
+        android:textColor="#020300"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:lineSpacingExtra="5dp"
+        android:text="工作日"
+        android:textColor="#020300"
+        android:background="#cdf5da"
+        android:id="@+id/workday"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:lineSpacingExtra="5dp"
+        android:text="自定义"
+        android:textColor="#020300"
+        android:background="#cdf5da"
+        android:id="@+id/customize"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>
