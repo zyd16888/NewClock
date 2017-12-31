@@ -99,8 +99,8 @@ public class StopWatchFragment extends Fragment implements View.OnClickListener 
             case R.id.iv_sw_Record:
                 if (ivRecord.isSelected()){
                     timeRecord.add(0,min + ":" + second + ":" + msec);
-                    adapter.notifyItemInserted(0);
-                    recyclerView.scrollToPosition(0);
+                    //adapter.notifyItemInserted(1);
+                    //recyclerView.scrollToPosition(1);
                 }
                 break;
             default:
